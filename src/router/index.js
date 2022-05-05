@@ -9,6 +9,11 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
+    name: "Home",
+    redirect: "/works",
+  },
+  {
+    path: "/works",
     name: "Works",
     component: Works,
   },
@@ -26,6 +31,7 @@ const routes = [
 
 const router = new VueRouter({
   routes,
+  mode: "history",
 });
 
 export default router;

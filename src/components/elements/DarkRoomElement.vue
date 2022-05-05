@@ -25,7 +25,6 @@
         <div class="gallery-title">
           <h1>{{ darkroom.title }}</h1>
         </div>
-        <hooper-progress slot="hooper-addons"></hooper-progress>
         <hooper id="gallery-hooper" :settings="hooperSettings" ref="carousel">
           <!-- Slides -->
           <slide
@@ -43,7 +42,7 @@
 </template>
 
 <script>
-import { Hooper, Slide, Progress as HooperProgress } from "hooper";
+import { Hooper, Slide } from "hooper";
 
 import "hooper/dist/hooper.css";
 
@@ -53,7 +52,6 @@ export default {
   components: {
     Hooper,
     Slide,
-    HooperProgress,
   },
   data() {
     return {
