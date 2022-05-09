@@ -16,10 +16,11 @@
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto">
-            <span class="brand">Alistair Long Studio</span>
-          </b-navbar-nav>
+
         </b-collapse>
+        <b-navbar-nav class="ml-auto">
+          <span class="brand px-3">Alistair Long Studio</span>
+        </b-navbar-nav>
       </b-navbar>
     </div>
   </b-container>
@@ -43,6 +44,7 @@ export default {
   background-color: #020202 !important;
   color: #ffffff;
 }
+
 .button {
   background-color: transparent;
   color: #ffffff;
@@ -54,10 +56,12 @@ export default {
 
   -webkit-transition: color 500ms;
   transition: color 500ms;
+
   &:hover {
     color: grey;
   }
 }
+
 .brand {
   color: #ffffff;
   font-size: 2.8rem;

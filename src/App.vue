@@ -2,11 +2,13 @@
   <div id="app">
     <NavBar />
     <router-view />
+    <!--<Footer /> -->
   </div>
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue"
+//import Footer from "./components/Footer.vue";
 export default {
   name: "App",
   components: { NavBar },
@@ -26,6 +28,7 @@ body {
   color: #ffffff;
   text-align: center;
 }
+
 #app {
   font-size: 16px !important;
   background-color: #020202;
@@ -34,6 +37,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .container-fluid {
   padding-inline: 0;
 }
